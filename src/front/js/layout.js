@@ -8,6 +8,7 @@ import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
 
+
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
@@ -18,6 +19,7 @@ const Layout = () => {
     const basename = process.env.BASENAME || "";
 
     if(!process.env.BACKEND_URL || process.env.BACKEND_URL == "") return <BackendURL/ >;
+    
 
     return (
         <div>
